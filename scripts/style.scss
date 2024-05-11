@@ -4,12 +4,29 @@
     margin: 0;
 }
 
+.logo {
+    height: 360px;
+}
 
 .secao {
 
-    width: 720px;
+    width: 100vw;
+    box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
+
+
+    &__inicio {
+        height: 250px;
+    }
 
     &__detalhes {
         background-color: rgb(105, 8, 8);
+        height: 450px;
+
+        img {
+            margin-top: -200px;
+        }
+    }
+    &__ondesassistir {
+
     }
 }
