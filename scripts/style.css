@@ -30,6 +30,10 @@ header {
 .secao__detalhes img {
   margin-top: -200px;
 }
+.secao__ondesassistir {
+  height: 1000px;
+}
+
 .texto__corpo {
   display: block;
   width: 450px;
@@ -41,6 +45,4 @@ header {
 
 footer {
   background-color: rgb(16, 48, 9);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
