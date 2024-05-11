@@ -1,0 +1,14 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.secao {
+  width: 720px;
+}
+.secao__detalhes {
+  background-color: rgb(105, 8, 8);
+}
+
+/*# sourceMappingURL=style.css.map */
