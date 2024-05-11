@@ -4,23 +4,43 @@
   margin: 0;
 }
 
+header {
+  background-color: rgb(52, 102, 52);
+}
+
 .logo {
   height: 360px;
 }
 
 .secao {
+  justify-content: center;
+  text-align: center;
   width: 100vw;
   box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
+  display: flexbox;
 }
 .secao__inicio {
   height: 250px;
+  background-color: rgb(160, 190, 152);
 }
 .secao__detalhes {
-  background-color: rgb(105, 8, 8);
+  background-color: rgb(80, 138, 65);
   height: 450px;
 }
 .secao__detalhes img {
   margin-top: -200px;
+}
+.texto__corpo {
+  display: block;
+  width: 450px;
+}
+
+.imagem__grande {
+  display: block;
+}
+
+footer {
+  background-color: rgb(16, 48, 9);
 }
 
 /*# sourceMappingURL=style.css.map */

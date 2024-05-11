@@ -1,7 +1,16 @@
+$cor__primaria      : rgb(52, 102, 52);
+$cor__secundaria    : rgb(80, 138, 65);
+$cor__intermediaria : rgb(160, 190, 152);
+$cor__contraste     : rgb(16, 48, 9);
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0;
+}
+
+header {
+    background-color: $cor__primaria;
 }
 
 .logo {
@@ -9,17 +18,20 @@
 }
 
 .secao {
-
+    justify-content: center;
+    text-align: center;
     width: 100vw;
     box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
+    display: flexbox;
 
 
     &__inicio {
         height: 250px;
+        background-color: $cor__intermediaria;
     }
 
     &__detalhes {
-        background-color: rgb(105, 8, 8);
+        background-color: $cor__secundaria;
         height: 450px;
 
         img {
@@ -29,4 +41,21 @@
     &__ondesassistir {
 
     }
+}
+
+.texto {
+    &__corpo {
+        display: block;
+        width: 450px;
+    }
+}
+
+.imagem {
+    &__grande {
+        display: block;
+    }
+}
+
+footer {
+    background-color: $cor__contraste;
 }
