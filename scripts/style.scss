@@ -3,6 +3,8 @@ $cor__secundaria    : rgb(80, 138, 65);
 $cor__intermediaria : rgb(160, 190, 152);
 $cor__contraste     : rgb(16, 48, 9);
 
+$min-window-width : 890px;
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -22,11 +24,11 @@ header {
     text-align: center;
     width: 100vw;
     box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
-    display: flexbox;
+    display: flex;
 
 
     &__inicio {
-        height: 250px;
+        display: flex;
         background-color: $cor__intermediaria;
     }
 
@@ -35,7 +37,7 @@ header {
         height: 450px;
 
         img {
-            margin-top: -200px;
+            margin-top: -250px;
         }
     }
     &__ondesassistir {
@@ -43,19 +45,60 @@ header {
     }
 }
 
+.container {
+    &__information {
+        width: 1000px;
+        display: inline-flex;
+
+        span {
+            padding: 36px;
+
+            h2 {
+                font-size: 26pt;
+            }
+
+            h2, p {
+                margin: 10px;
+            }
+
+        }
+
+    }
+}
+
 .texto {
     &__corpo {
-        display: block;
+        display: flex;
         width: 450px;
+        margin: 28px;
+        padding: 10px;
     }
 }
 
 .imagem {
     &__grande {
-        display: block;
+        display: flex;
+    }
+
+    &__poster {
+        margin: 50px;
+        width: 320px;
+        box-shadow: 3px 3px 8px 8px rgba(0, 0, 0, 0.4);
     }
 }
 
 footer {
+    color: white;
     background-color: $cor__contraste;
+    box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
+
+    margin: 0;
+    height: 180px;
+}
+
+@media (max-width: $min-window-width) {
+
+    .secao {
+        background-color: red;
+    }
 }

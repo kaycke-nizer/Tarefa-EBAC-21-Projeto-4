@@ -17,10 +17,10 @@ header {
   text-align: center;
   width: 100vw;
   box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
-  display: flexbox;
+  display: flex;
 }
 .secao__inicio {
-  height: 250px;
+  display: flex;
   background-color: rgb(160, 190, 152);
 }
 .secao__detalhes {
@@ -28,21 +28,52 @@ header {
   height: 450px;
 }
 .secao__detalhes img {
-  margin-top: -200px;
+  margin-top: -250px;
 }
 .secao__ondesassistir {
   height: 1000px;
 }
 
+.container__information {
+  width: 1000px;
+  display: inline-flex;
+}
+.container__information span {
+  padding: 36px;
+}
+.container__information span h2 {
+  font-size: 26pt;
+}
+.container__information span h2, .container__information span p {
+  margin: 10px;
+}
+
 .texto__corpo {
-  display: block;
+  display: flex;
   width: 450px;
+  margin: 28px;
+  padding: 10px;
 }
 
 .imagem__grande {
-  display: block;
+  display: flex;
+}
+.imagem__poster {
+  margin: 50px;
+  width: 320px;
+  box-shadow: 3px 3px 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 footer {
+  color: white;
   background-color: rgb(16, 48, 9);
+  box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
+  margin: 0;
+  height: 180px;
+}
+
+@media (max-width: 890px) {
+  .secao {
+    background-color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
