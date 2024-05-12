@@ -2,6 +2,7 @@ $cor__primaria      : rgb(52, 102, 52);
 $cor__secundaria    : rgb(80, 138, 65);
 $cor__intermediaria : rgb(160, 190, 152);
 $cor__contraste     : rgb(16, 48, 9);
+$cor__claro         : rgb(202, 211, 199);
 
 $min-window-width : 890px;
 
@@ -42,6 +43,20 @@ header {
     }
     &__ondesassistir {
         height: 1000px;
+    }
+
+    &__video {
+        height: 540px;
+        background-color: $cor__claro;
+    }
+
+    &__footer {
+        width: 60vw;
+        
+        display: inline-flex;
+        justify-content: space-between;
+
+
     }
 }
 
@@ -87,18 +102,91 @@ header {
     }
 }
 
+.video-incorporado {
+    margin: 22px;
+}
+
 footer {
+    text-align: center;
+    align-content: space-between;
+
     color: white;
     background-color: $cor__contraste;
     box-shadow: 0 -8px 20px 0 rgba(0, 0, 0, 0.6);
 
     margin: 0;
+    padding: 20px;
     height: 180px;
+
+}
+
+.lista__footer {
+    list-style-type: none;
+    text-align: start;
+    justify-content: start;
+    padding-left: 0;
+
+    li {
+        margin: 8px;
+        text-align: start;
+        font-size: 14pt;
+    }
+    
+}
+
+.redes {
+    font-size: 30pt;
+    margin: 16px;
+
+    i {
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    i:hover {
+        color: grey;
+    }
+}
+
+.footer-credits {
+    display: block;
+    margin-top: 30px;
+
 }
 
 @media (max-width: $min-window-width) {
 
+    .video-incorporado {
+        display: none;
+    }
+
+    .imagem {
+        &__poster {
+            display: none;
+        }
+        &__grande {
+           display: none;
+        }
+
+    }
+
     .secao {
-        background-color: red;
+        align-items: center;
+        justify-content: center;
+
+        &__video {
+            display: none;
+        }
+    }
+
+    .container {
+        &__information {
+            justify-content: center;
+        }
+    }
+
+    .logo {
+        width: 90vw;
+        height: fit-content;
     }
 }
